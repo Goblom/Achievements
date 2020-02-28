@@ -1,0 +1,58 @@
+## Set to true to see what happens in the background
+debug: false
+
+
+## Set to true to enable the achievements that are used
+## to test this plugins ability
+enable-testing-achievements: true
+
+
+## Change this to a human readable name
+## Not meant to be a server id
+## Example:
+## ---> "Hub_3" should be "Hub"
+## ---> "SG3" should be "SG" or "Survival Games"
+##
+## Leave as Global if you are unsure what this means
+#########################
+## WARNING
+## -------- Changing this AFTER this server registers its achievements will
+## -------- cause the achievements to re-register causing multiple achievements
+## -------- to be the same
+server-name: Global
+
+
+## This is what is shown to the player when they are awarded / unlock an achievement
+## Placeholders
+## ----> {name} ~~~~~ Name of the achievement
+## ----> {desc} ~~~~~ Description of the achievement
+## ----> Icons
+## ---------> %box ~~~~~ ■
+unlocked-message:
+    - "&7%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box"
+    - "&b&lName"
+    - "&7{name}"
+    - ""
+    - "&b&lDescription"
+    - "&7{desc}"
+    - ""
+    - "&7%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box%box"
+    
+    
+#################################################
+##                    MySQL                    ##
+#################################################
+##           DOES NOT SUPPORT SQLite           ##
+#################################################
+mysql:
+    host: localhost
+    port: 3306
+    database: achievements
+    username: root
+    password: ''
+    ####################
+    ## Refresh
+    ## -- If you somehow messed up the db for this plugin
+    ## -- make this true and the plugin will redo the
+    ## -- the entire database
+    refresh: false

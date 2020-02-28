@@ -1,0 +1,9 @@
+main: codes.goblom.achievements.lua.LuaPlugin
+name: Achievements_LuaAddon
+version: 1.0
+author: Goblom
+depends: [Achievements]
+
+commands:
+    achievementslua:
+        aliases: [al, saveluaexample, sle]

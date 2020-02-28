@@ -1,0 +1,11 @@
+name: Achievements
+authors: [Goblom]
+version: 1.0
+main: codes.goblom.achievements.AchievementPlugin
+softdepend: [InventoryApi]
+load: startup
+
+commands:
+    achievements:
+        description: Open Achievements Menu
+        aliases: [a]
